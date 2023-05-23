@@ -29,12 +29,18 @@ const enemies = [
     }
 ]
 
-enemies.forEach(enemies => { 
-    if (enemies.isReallyHated === true) {
-        console.log(`${enemies.firstName} ${enemies.lastName} (Really, really dislike!)`)
-    } else {
-        console.log(`${enemies.firstName} ${enemies.lastName}`)
-    }
-}) 
+// can do this
+// enemies.forEach(enemies => { 
+//     if (enemies.isReallyHated === true) {
+//         console.log(`${enemies.firstName} ${enemies.lastName} (Really, really dislike!)`)
+//     } else {
+//         console.log(`${enemies.firstName} ${enemies.lastName}`)
+//     }
+// }) 
 
+// but we can also be fancy and use a ternary operator
+enemies.forEach(enemy => {
+    const status = enemy.isReallyHated ? "(Really, really dislike!)" : "";
+    console.log(`${enemy.firstName} ${enemy.lastName} ${status}`);
+});
 
