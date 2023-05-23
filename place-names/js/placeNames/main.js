@@ -12,12 +12,12 @@ for (const name of names) {
 }
 
 // javascript solution 
-console.log("\n'The' Place Names (2)");
+console.log("\n'The' Place Names");
 const forTheNames = names.filter(name => name.startsWith("The"));
 forTheNames.forEach(name => console.log(name));
 
 // can also do
-console.log("\n'The' Place Names");
+console.log("\n'The' Place Names (2)");
 theNames = names.filter(name => name.startsWith("The"));
 for (const name of theNames) {
   console.log(name);
