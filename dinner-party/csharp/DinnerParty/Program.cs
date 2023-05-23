@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
 var guests = GetGuests();
 var tables = new Dictionary<string, List<Guest>>
